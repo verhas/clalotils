@@ -14,6 +14,6 @@ public class ClassCollectorTest {
 
 	@Test
 	public void collectClasses() throws URISyntaxException, IOException{
-		new ClassCollector().collect((URLClassLoader) this.getClass().getClassLoader());
+		new ClassCollector().analyze((URLClassLoader) this.getClass().getClassLoader());
 	}
 }
